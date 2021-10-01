@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../src/style.css" type="text/css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <span id="loader" class="loading1 hide">
+            <span class="outerCircle"></span>
+            <span class="innerCircle">
+                <span class="center"></span>
+            </span>
+        </span>
+        <div id="logo"></div>
+        <form id="searchTerm">
+            <input type="search" id="searchBox" class="searchBox" placeholder="City">
+            <button type="submit" id="searchButton" class="searchButton">Search</button>
+            <div class="error hide" id="error">Please enter a valid city</div>
+
+        </form>
+        <button type="button" class="degrees" id="deg"><b>°C</b> / °F</button>
+    </header>
+
+    <section class="hero">
+        <ul class="shortcuts">
+            <li class="shortcut">London</li>
+            <li class="shortcut">Beijing</li>
+            <li class="shortcut">Brisbane</li>
+            <li class="shortcut">Los Angeles</li>
+            <li class="shortcut">New York</li>
+        </ul>
+        <div class="keyTemp" id="keyTemp">
+            <p id="heroCard"> </p>
+        </div>
+        <div class="rangeOfTemps" id="rangeOfTemps">
+            <div id="forecastContainer"></div>
+        </div>
+    </section>
+    <section class="stats">
+        <div class="stats-top stats-content" id="stats-top"></div>
+        <div class="stats-bot stats-content" id="stats-bot"></div>
+    </section>
+    <section class="weekly">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th class="left-align">DAY</th>
+                    <th></th>
+                    <th>CHANCE OF RAIN</th>
+                    <th>HUMIDITY</th>
+                    <th class="right-align">TEMPERATURE</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <div class="headings">
+
+        </div>
+
+    </section>
+    <script src="bundle.js"></script>
+</body>
+</html>
