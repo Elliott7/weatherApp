@@ -123,7 +123,7 @@ async function changeTemperature() {
         const newLink = changeTempLink()
         const data = await getAPIData(newLink)
         updateHeroCard(data.daily, trackers.getCity()).run()
-        updateForecastSection(data.daily)
+        updateForecastSection(data.daily, data.timezone_offset)
         const extractCurrentData = extractCurrentStats(data.current)
         updateBlocks(extractCurrentData)
     } catch (error) {
