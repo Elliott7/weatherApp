@@ -112,6 +112,7 @@ function addLogo(){
     const logoDiv = document.getElementById('logo')
     const myLogo = new Image()
     myLogo.src = myImage
+    myLogo.alt = 'sunny cloud logo'
     myLogo.classList.add("logo")
     logoDiv.appendChild(myLogo)
 }

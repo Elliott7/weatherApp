@@ -10,6 +10,7 @@ export default function createRow(arr){
     const forecastPicture = document.createElement('td')
     const picture = document.createElement('img')
     picture.classList.add('forecast-picture')
+    picture.alt = 'forecast type'
     picture.src = arr[1]
     forecastPicture.appendChild(picture)
     containerCard.appendChild(forecastPicture)

@@ -19,6 +19,7 @@ export default function forecastCard(arr){
 
     const picture = document.createElement('img')
     picture.classList.add('picture', 'on-hover')
+    picture.alt = "Weather type"
     picture.src = arr[3]
     containerCard.appendChild(picture)
 
@@ -29,6 +30,7 @@ export default function forecastCard(arr){
 
     const moon = document.createElement('img')
     moon.classList.add('moon')
+    moon.alt = 'Moon Phase'
     moon.src = arr[5]
     containerCard.appendChild(moon)
 

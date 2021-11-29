@@ -22,7 +22,6 @@ export default function moonLink(num){
 }
 
 export function moonLabeling(num){
-    console.log(num)
     switch (true) {
         case num < 0.0675:
             return "New Moon"
