@@ -5,7 +5,7 @@
 * [Features](#features)
 
 ## Walk through video
-Insert vid here
+<img src="https://user-images.githubusercontent.com/32166124/143989139-bb1c9f4e-922f-4515-bce8-66c2f41c5317.gif" alt="GIF">
 
 ## General Info
 This is a simple weather application utilizing the OpenWeather API
@@ -22,4 +22,5 @@ This project is created with:
 * Weather information from any city in the world
 * Simple loading animation when fetching new location
 * Conversion between C°/F°
+* Shortcuts for popular cities around the world
 * Responsive web design
