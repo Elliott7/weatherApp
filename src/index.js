@@ -390,5 +390,3 @@ function createForecastTable(data){
     }
     return {createTable}
 }
-
-let x = document.getElementById('testingdsaf')
